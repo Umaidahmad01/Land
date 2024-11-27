@@ -3,19 +3,19 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6742642573:AAEOx2H7V-7pWgqX7dOveAKB3lAW8S3rbwA")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7255422393:AAEpTMHjS_qpGs7dcoDpHMJsQc_ZmxnP8pg")
 
 # Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "23890262"))
+APP_ID = int(os.environ.get("APP_ID", "20718334"))
 
 # Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "da7e86cf57b0e6220b8a9e0aed228a68")
+API_HASH = os.environ.get("API_HASH", "4e81464b29d79c58d0ad8a0c55ece4a5")
 
 # Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001995978690"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002177334941"))
 
 # DEV ID
-DEV_ID = int(os.environ.get("DEV_ID", "6497757690"))
+DEV_ID = int(os.environ.get("DEV_ID", "5585016974"))
 
 # Port
 PORT = os.environ.get("PORT", "8080")
@@ -25,14 +25,14 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://teamnetflix:teamnetflix@c
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 # Force sub channel id, if you want enable force sub
-FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1001473043276"))
-FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1001495022147"))
+FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1002072642438"))
+FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002056122922"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Mainly add graph else telegraph link
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/c7727a6d27332ffcd8f03.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/8581e33195ed8183a3253.jpg")
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/3PQ.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/3PQ.jpg")
 
 # Add your text according to your preference
 HELP_TXT = "<b>ᴅᴍ <a href=https://t.me/i_killed_my_clan>ᴏʙɪᴛᴏ</a></a></b>"
@@ -40,8 +40,8 @@ ABOUT_TXT = "<b>» ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/i_killed_my_clan>�
 # start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - <a href=https://t.me/animes_society_official>ᴀɴɪᴍᴇ sᴏᴄɪᴇᴛʏ</a></b>")
 try:
-    ADMINS=[5115691197]
-    for x in (os.environ.get("ADMINS", "5115691197").split()):
+    ADMINS=[5585016974]
+    for x in (os.environ.get("ADMINS", "5585016974").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Owner list does not contain valid integers.")
@@ -50,7 +50,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "» ʜᴇʟʟᴏ {first}!⚡\n\n🫧ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛʜ ᴏꜰ ᴏᴜʀ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ...!")
 
 # set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>» ʙʏ @team_netflix</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 # set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
@@ -64,7 +64,7 @@ USER_REPLY_TEXT = "​🚫Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍ�
 
 OWNER_ID = int(os.environ.get("OWNER_ID", "6497757690"))
 ADMINS.append(OWNER_ID)
-ADMINS.append(5115691197)
+ADMINS.append(5585016974)
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
 DEL_TIMER = int(os.environ.get("DEL_TIMER", "600"))
