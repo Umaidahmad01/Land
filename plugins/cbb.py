@@ -1,8 +1,8 @@
-from pyrogram import Client 
+from pyrogram import Client, filters
+from pyrogram.types import Message
 from bot import Bot
 from config import OWNER_ID, ABOUT_TXT, HELP_TXT, START_MSG
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from database.database import add_user, del_user, full_userbase, present_user
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
@@ -36,11 +36,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             text=START_MSG.format(first=query.from_user.first_name),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("• ғᴏʀ ᴍᴏʀᴇ •", url='https://t.me/anime_sub_society')],
-                    [InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data='about'),
-                     InlineKeyboardButton("ʜᴇʟᴘ •", url='https://t.me/ahss_help_zone')],
-                    [InlineKeyboardButton("• ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ •", url='https://t.me/society_network')],
-                ])
+                [InlineKeyboardButton("• ʜᴇʟᴘ", callback_data='help'),
+                 InlineKeyboardButton("ᴀʙᴏᴜᴛ •", callback_data='about')],
+                [InlineKeyboardButton('• ᴀɴɪᴍᴇ', url='https://t.me/anime_cruise_netflix'),
+                 InlineKeyboardButton('ᴡᴇʙsᴇʀɪᴇs •', url='https://t.me/webseries_flix')],
+                [InlineKeyboardButton("• ᴄʟᴏꜱᴇ •", callback_data='close')]
+            ])
         )
     
     elif data == "close":
@@ -48,4 +49,4 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         try:
             await query.message.reply_to_message.delete()
         except:
-            pass
+            pass      
