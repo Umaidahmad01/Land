@@ -1,61 +1,61 @@
-# File Sharing Bot Modified Version
+━━━━━━━━━━━━━━━━━━━━
 
-<b>A Telegram Special File Sharing Bot Who Made A Link Of File And You Can Access File Through Link.</b>
+<h2 align="center">
+    ──「 ғɪʟᴇ sᴛᴏʀᴇ ᴘʀᴏ 」──
+</h2>
+
+<p align="center">
+  <img src="https://graph.org/file/8581e33195ed8183a3253.jpg">
+</p>
+
+<p align="center">
+<b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
+</p>
+
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
+
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/sewxiy/Lol"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs/ʟᴏᴄᴀʟ 」─
+</h3>
 
-### Features
-- File sharing modified version made by - [@Its_Oreki_Hotarou](https://t.me/Its_Oreki_Hotarou)**
+<details><summary><b> - ғᴇᴀᴛᴜʀᴇs:</b></summary>
+  
+## ғᴇᴀᴛᴜʀᴇs
 - Fully customisable.
-- Two Force Sub Channels.
-- Also working on Render Or Koyeb.
+- Two Force Sub Channels 
+- You Can Directly Change Forcesub Channels and Admins Through Commands 
 - Customisable welcome & Forcesub messages.
+- Customisable Pics
 - More than one Posts in One Link.
 - Can be deployed on heroku directly.
+- Can be deployed on Koyeb Either
+</details>
 
-### Setup
+<details><summary><b> - ᴀᴅᴍɪɴ ᴀɴᴅ ᴜsᴇʀs ᴄᴏᴍᴍᴀɴᴅs :</b></summary>
+  
+## ᴀᴅᴍɪɴ ᴀɴᴅ ᴜsᴇʀs ᴄᴏᴍᴍᴀɴᴅs
+- [x] start - ꜱᴛᴀʀᴛ ᴍᴇ...
+- [x] batch - create link for more than one posts
+- [x] genlink - create link for one post
+- [x] users - view bot statistics
+- [x] broadcast - broadcast any messages to bot users
+- [x] stats - checking your bot uptime
+- [x] add_admin - (Owner Only) To add Admins
+- [x] del_admin - (Owner Only) Delete Admins
+- [x] admins - (Owner Only) Show Admin List
+- [x] forcesub1 - (Owner Only) Change Forcesub Channel 1
+- [x] forcesub2 - (Owner Only) Change Forcesub Channel 2
+- [x] viewforce - (Owner Only) Check Forcesub Channels
+</details>
 
-- Add the bot to Database Channel with all permission
-- Add bot to ForceSub channel as Admin with Invite Users via Link Permission if you enabled ForceSub 
-
-##
-### Installation
-#### Deploy on Heroku
-**BEFORE YOU DEPLOY ON HEROKU, YOU SHOULD FORK THE REPO AND CHANGE ITS NAME TO ANYTHING ELSE**<br>
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)</br>
-
-##
-## Installation
-#### Deploy on Render
-<b>BEFORE DEPLOY ON RENDER, FORK REPO EDIT CONFIG, CREATE NEW WEB-SERVICE ADD VARIABLES AND ADD MONITOR THATS IT</b>
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com)
-
-##
-#### Deploy in your VPS
-````bash
-git clone https://github.com/Sahil0976/MultiForce-Sub
-cd File-Sharing-Bot
-pip3 install -r requirements.txt
-# <Create config.py appropriately>
-python3 main.py
-````
-
-### Admin Commands
-
-```
-start - start the bot or get posts
-batch - create link for more than one posts
-genlink - create link for one post
-users - view bot statistics
-broadcast - broadcast any messages to bot users
-stats - checking your bot uptime
-help - For Help
-about - about bot
-```
-
-### Variables
-
+<details><summary><b> - ᴠᴀʀɪᴀʙʟᴇs :</b></summary>
+  
+## ᴠᴀʀɪᴀʙʟᴇs
 * `API_HASH` Your API Hash from my.telegram.org
 * `APP_ID` Your API ID from my.telegram.org
 * `TG_BOT_TOKEN` Your bot token from @BotFather
@@ -66,11 +66,9 @@ about - about bot
 * `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
 * `START_MSG` Optional: start message of bot, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#start_message'>fillings</a>
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
-* `FORCESUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
-* `FORCESUB_CHANNEL2` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `FORCE_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `FORCE_CHANNEL2` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
-* `START_PIC` A pic with start message
-* `FORCE_PIC` A pic with forcesub message
 
 ### Extra Variables
 
@@ -78,21 +76,47 @@ about - about bot
 * `DISABLE_CHANNEL_BUTTON` Put True to Disable Channel Share Button, Default if False
 * `BOT_STATS_TEXT` put your custom text for stats command, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#custom_stats'>fillings</a>
 * `USER_REPLY_TEXT` put your text to show when user sends any message, use HTML
+</details>
+
+<details>
+<summary><h3>
+- <b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
+</h3></summary>
+
+- Get your [Necessary Variables](https://github.com/Codeflix-Bots/lol/blob/main/config.py)
+- git clone https://github.com/Codeflix-Bots/LucyV2
+- # Install Packages
+- pip3 install -U -r requirements.txt
+- Edit config.py with variables as given below then run bot
+- python3 main.py
+
+<p align="center">
+  <img src="https://graph.org/file/c7727a6d27332ffcd8f03.jpg">
+</p>
 
 
-### Fillings
-#### START_MESSAGE | FORCE_SUB_MESSAGE
+</details>
+━━━━━━━━━━━━━━━━━━━━
 
-* `{first}` - User first name
+<h3 align="center">
+    ─「 sᴜᴩᴩᴏʀᴛ 」─
+</h3>
 
-#### CUSTOM_CAPTION
+<p align="center">
+<a href="https://telegram.me/weebs_support"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p>
+<p align="center">
+<a href="https://telegram.me/codeflix_bots"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p>
 
-* `{filename}` - file name of the Document
-* `{previouscaption}` - Original Caption
+━━━━━━━━━━━━━━━━━━━━
 
-#### CUSTOM_STATS
+<h3 align="center">
+    ─「 ᴄʀᴇᴅɪᴛs 」─
+</h3>
 
-* `{uptime}` - Bot Uptime
+- <b>[sᴜʙᴀʀᴜ](https://github.com/Codeflix-Bots)  ➻  [ғᴏᴜɴᴅᴇʀ](https://github.com/Codeflix-Bots/lol) </b>
+ 
+<b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://github.com/Codeflix-Bots/lucy/graphs/contributors) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ file store ʀᴏʙᴏᴛ ᴜsᴇғᴜʟ & ᴩᴏᴡᴇʀғᴜʟ 🖤 </b>
 
-**Star this Repo if you Liked it ⭐⭐⭐**
-
+━━━━━━━━━━━━━━━━━━━━
