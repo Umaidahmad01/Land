@@ -103,3 +103,4 @@ async def add_2(channel2: int):
         print(f"Force subscribe channel 2 set successfully: {channel2}")
     except Exception as e:
         print(f"Failed to set force subscribe channel 2: {e}")
+        
