@@ -31,13 +31,12 @@ FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002056122922"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Mainly add graph else telegraph link
-START_PIC = os.environ.get("START_PIC", "https://envs.sh/3PQ.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/3PQ.jpg")
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/Chb.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/Chb.jpg")
 
 # Add your text according to your preference
-HELP_TXT = "<b>ᴅᴍ <a href=https://t.me/i_killed_my_clan>ᴏʙɪᴛᴏ</a></a></b>"
-ABOUT_TXT = "<b>» ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/i_killed_my_clan>ᴏʙɪᴛᴏ</a>\n» ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ : <a href=https://t.me/society_network>sᴏᴄɪᴇᴛʏ ɴᴇᴛᴡᴏʀᴋ</a>\n» ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/animes_society_official>ᴀɴɪᴍᴇ sᴏᴄɪᴇᴛʏ</a>\n» ᴏɴɢᴏɪɴɢ sᴏᴄɪᴇᴛʏ : <a href=https://t.me/ongoing_society>ᴏɴɢᴏɪɴɢ sᴏᴄɪᴇᴛʏ</a>\n» sᴏᴄɪᴇᴛʏ ɴᴇᴡs : <a href=https://t.me/MangaStuffs>sᴏᴄɪᴇᴛʏ ɴᴇᴡs</a>\n» ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/i_killed_my_clan>ᴏʙɪᴛᴏ</a></b>"
-# start message
+HELP_TXT = "<b>ᴅᴍ <a href=https://t.me/Madhav_S9>sᴏʟᴏ</a></a></b>"
+ABOUT_TXT = "<b>» ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/Madhav_S9>sᴏʟᴏ</a>\n» ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ : <a href=https://t.me/TEAM_HTX>ᴛᴇᴀᴍ ʜᴛx</a>\n» ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/anime_hindi_sub_industry>ᴀɴɪᴍᴇ ɪɴᴅᴜsᴛʀʏ</a>\n» ᴏɴɢᴏɪɴɢ ɪɴᴅᴜsᴛʀʏ : <a href=https://t.me/OngoingAnime_Industry>ᴏɴɢᴏɪɴɢ ɪɴᴅᴜsᴛʀʏ</a>\n» ɪɴᴅᴜsᴛʀʏ ɴᴇᴡs : <a href=https://t.me/Anime_News_Industry>ɪɴᴅᴜsᴛʀʏ ɴᴇᴡs</a>\n» ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/i_killed_my_clan>ᴏʙɪᴛᴏ</a></b>"# start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - <a href=https://t.me/animes_society_official>ᴀɴɪᴍᴇ sᴏᴄɪᴇᴛʏ</a></b>")
 try:
     ADMINS=[5585016974]
