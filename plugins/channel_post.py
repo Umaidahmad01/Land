@@ -18,12 +18,12 @@ async def channel_post(client: Client, message: Message):
     if not is_admin:
         return
     
-    reply_text = await message.reply_text("Please Wait...!", quote=True)
+    reply_text = await message.reply_text("Please Wait...!", quote = True)
     try:
-        post_message = await message.copy(chat_id=client.db_channel.id, disable_notification=True)
+        post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
     except FloodWait as e:
         await asyncio.sleep(e.x)
-        post_message = await message.copy(chat_id=client.db_channel.id, disable_notification=True)
+        post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
     except Exception as e:
         print(e)
         await reply_text.edit_text("Something went Wrong..!")
@@ -35,7 +35,7 @@ async def channel_post(client: Client, message: Message):
 
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("📫 ʏᴏᴜʀ ᴜʀʟ", url=f'https://telegram.me/share/url?url={link}')]])
 
-    await reply_text.edit(f"<b>Here is your link</b>\n\n{link}", reply_markup=reply_markup, disable_web_page_preview=True)
+    await reply_text.edit(f"<b>Here is your link</b>\n\n{link}", reply_markup=reply_markup, disable_web_page_preview = True)
 
     if not DISABLE_CHANNEL_BUTTON:
         await post_message.edit_reply_markup(reply_markup)
