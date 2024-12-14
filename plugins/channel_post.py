@@ -50,10 +50,9 @@ async def new_post(client: Client, message: Message):
     string = f"get-{converted_id}"
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("📫 ʏᴏᴜʀ ᴜʀʟ", url=f'https://telegram.me/share/url?url={link}')]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("📫 ʏᴏᴜʀ ᴜʀʟ​", url=f'https://telegram.me/share/url?url={link}')]])
     try:
         await message.edit_reply_markup(reply_markup)
     except Exception as e:
         print(e)
         pass
-        
